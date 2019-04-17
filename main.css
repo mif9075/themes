@@ -14,8 +14,12 @@
     background-color: #001C43;
 }
 
+.table {
+    width: auto;
+}
+
 /*Miscellaenous Codes*/
-body {
+/* body {
     height: 100vh;
 }
 
@@ -63,4 +67,4 @@ button {
 
  button::-moz-focus-inner {
     border: 0;
- }
+ } */

@@ -43,6 +43,9 @@ function toggleYankees(event) {
 }
 
 function DisplayTable(team) {
+
+    clearList();
+
     const worldSeriesTD = document.querySelector('#worldseries');
     const worldSeriesData = document.createElement('p');
     worldSeriesData.innerText = data[team].worldseries;
@@ -62,6 +65,39 @@ function DisplayTable(team) {
     const wildcardData = document.createElement('p');
     wildcardData.innerText = data[team].wildcardberths;
     wildcardTD.appendChild(wildcardData);
+}
+
+function clearList() {
+    event.preventDefault();
+    removeAllChildrenOfOl();
+}
+
+
+function removeAllChildrenOfOl() {
+
+    const ul = document.querySelector('#worldseries');
+
+    while (ul.hasChildNodes()) {
+        ul.removeChild(ul.firstChild);
+    }
+
+    const ol = document.querySelector('#pennants');
+
+    while (ol.hasChildNodes()) {
+        ol.removeChild(ol.firstChild);
+    }
+
+    const ol2 = document.querySelector('#division');
+
+    while (ol2.hasChildNodes()) {
+        ol2.removeChild(ol2.firstChild);
+    }
+
+    const ol3 = document.querySelector('#wildcard');
+
+    while (ol3.hasChildNodes()) {
+        ol3.removeChild(ol3.firstChild);
+    }
 }
 
 // function toggleTheme(event) {
