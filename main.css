@@ -1,0 +1,65 @@
+/*Button Colors*/
+.btn-redsox {
+    color: #C60C30;
+    background-color: #002244;
+}
+
+.btn-mets {
+    color: #FF4A00;
+    background-color: #002C74;
+}
+
+.btn-yankees {
+    color: #E8002F;
+    background-color: #001C43;
+}
+
+body {
+    height: 100vh;
+}
+
+.app {
+    height: 100%;
+    background: #eeeeee;
+    color: #212121;
+}
+
+.toggle-button {
+    background: #e0e0e0;
+    color: #212121;
+    font-size: 1.25em;
+    font-weight: 500;
+    border: 0;
+    margin: 6px;
+    border-radius: 2px 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+}
+
+.app.dark-theme {
+    background: #333333;
+    color: #eeeeee;
+}
+
+.toggle-button.dark-theme {
+    box-shadow: 0 2px 5px 0 white;
+}
+
+.happy {
+    color: green;
+}
+
+.mad {
+    color: red;
+}
+
+.warning {
+    color: orange;
+}
+
+button {
+    outline: none;
+ }
+
+ button::-moz-focus-inner {
+    border: 0;
+ }
