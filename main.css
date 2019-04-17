@@ -1,19 +1,19 @@
 /*Button Colors*/
-.btn-redsox {
-    color: #C60C30;
-    background-color: #002244;
+.table {
+    width: auto;
 }
 
-.btn-mets {
+.mets {
     color: #FF4A00;
     background-color: #002C74;
 }
 
-.btn-yankees {
+.yankees {
     color: white;
     background-color: #001C43;
 }
 
-.table {
-    width: auto;
+.redsox {
+    color: #C60C30;
+    background-color: #002244;
 }

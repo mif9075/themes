@@ -2,43 +2,54 @@ window.onload = init;
 
 function init() {
 
-    document.querySelector('.btn-redsox')
+    document.querySelector('.redsox')
         .addEventListener('click', toggleRedSox);
-    document.querySelector('.btn-mets')
+    document.querySelector('.mets')
         .addEventListener('click', toggleMets);
-    document.querySelector('.btn-yankees')
+    document.querySelector('.yankees')
         .addEventListener('click', toggleYankees);
 }
 
 function toggleRedSox(event) {
     event.preventDefault();
-    const button = event.target;
+    const app = document.querySelector('.table');
     const header = document.querySelector('.header');
-    const app = document.querySelector('.app');
-
+    
     header.innerText = `Boston Red Sox`;
+    
+    app.classList.remove('mets');
+    app.classList.remove('yankees');
+    app.classList.add('redsox');
     DisplayTable(1);
 }
 
 function toggleMets(event) {
     event.preventDefault();
-    const button = event.target;
+    const app = document.querySelector('.table');
     const header = document.querySelector('.header');
-    const app = document.querySelector('.app');
-
+    
     header.innerText = `New York Mets`;
+
+    app.classList.remove('redsox');
+    app.classList.remove('yankees');
+    app.classList.add('mets');
     DisplayTable(2);
 }
 
 function toggleYankees(event) {
     event.preventDefault();
-    const button = event.target;
+    const app = document.querySelector('.table');
     const header = document.querySelector('.header');
-    const app = document.querySelector('.app');
-
+    
     header.innerText = `New York Yankees`;
+
+    app.classList.remove('mets');
+    app.classList.remove('redsox');
+    app.classList.add('yankees');
     DisplayTable(0);
 }
+
+
 
 function DisplayTable(team) {
 
