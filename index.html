@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Yankees/Mets/Red Sox - Theme Switcher</title>
+        <title>Red Sox/Yankees - Theme Switcher</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit-no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="data.js"></script>
         <script src="main.js"></script>
 
@@ -11,61 +11,54 @@
         <link href="main.css" rel="stylesheet" type="text/css">
     </head>
     <body>
+        <div class="jumbotron">
+            <h2 class="display-5">Red Sox/Yankees: Theme Switcher.</h2>
+            <p class="lead">Click a button below to select a baseball theme.</p>
+          <nav>
+            <button type="button" class="btn btn-redsox">Boston Red Sox</button>
+            <button type="button" class="btn btn-mets">New York Mets</button>
+            <button type="button" class="btn btn-yankees">New York Yankees</button>
+          </nav>
+          <br>
+            <h2 class="header display-5"></h2>
+        </div>
+          <!-- <hr class="my-4"> -->
+      
 
-        <button type="button" class="btn btn-redsox">Boston Red Sox</button>
-        <button type="button" class="btn btn-mets">New York Mets</button>
-        <button type="button" class="btn btn-yankees">New York Yankees</button>
-
-        <nav></nav>
-
-          <div class="app dark-theme">
+          <!-- <div class="app dark-theme">
             <h1 class="header happy">I'm so glad you haven't pushed the button.</h1>
             <button class="toggle-button dark-theme">SWITCH TO LIGHT MODE</button>
-        </div>
+          </div> -->
 
-        
+       
+          <table class="table">
 
-
-        
-        <article>
-            <table class="table">
                 <thead>
                   <tr>
                     <th scope="col"></th>
                     <th scope="col">Major League Titles</th>
-                    <th scope="col"></th>
-                    <th scope="col"></th>
                   </tr>
                 </thead>
+
                 <tbody>
                   <tr>
                     <th scope="row">World Series Titles</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <td id="worldseries">Mark</td>
                   </tr>
                   <tr>
                     <th scope="row">AL/NL Pennants</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
+                    <td id="pennants">Jacob</td>
                   </tr>
                   <tr>
                     <th scope="row">East Division Titles</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
+                    <td id="division">Larry</td>
                   </tr>
                   <tr>
                     <th scope="row">Wild Card Berths</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
+                    <td id="wildcard">Larry</td>
                   </tr>
                 </tbody>
               </table>
-        </article>
-        <aside></aside>
-        <footer></footer>
+       
     </body>
 </html>
