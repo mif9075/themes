@@ -19,6 +19,7 @@ function toggleRedSox(event) {
     const app = document.querySelector('.app');
 
     header.innerText = `Boston Red Sox`;
+    DisplayTable(1);
 }
 
 function toggleMets(event) {
@@ -28,7 +29,7 @@ function toggleMets(event) {
     const app = document.querySelector('.app');
 
     header.innerText = `New York Mets`;
-    DisplayTable(2)
+    DisplayTable(2);
 }
 
 function toggleYankees(event) {
@@ -44,24 +45,24 @@ function toggleYankees(event) {
 function DisplayTable(team) {
     const worldSeriesTD = document.querySelector('#worldseries');
     const worldSeriesData = document.createElement('p');
-
-    // for (let i = 0; i < data.length; i++){
-    // for(let j = 0; j < data[yankee].worldseries.length; j++){
     worldSeriesData.innerText = data[team].worldseries;
-    worldSeriesTD.appendChild(worldSeriesData)
+    worldSeriesTD.appendChild(worldSeriesData);
 
+    const pennantsTD = document.querySelector('#pennants');
+    const pennantsData = document.createElement('p');
+    pennantsData.innerText = data[team].alpennants;
+    pennantsTD.appendChild(pennantsData);
+
+    const divisionTD = document.querySelector('#division');
+    const divisionData = document.createElement('p');
+    divisionData.innerText = data[team].eastdivisiontitles;
+    divisionTD.appendChild(divisionData);
+
+    const wildcardTD = document.querySelector('#wildcard');
+    const wildcardData = document.createElement('p');
+    wildcardData.innerText = data[team].wildcardberths;
+    wildcardTD.appendChild(wildcardData);
 }
-
-// const pennantsTD = document.querySelector('#pennants');
-// const pennantsData = document.createElement('td');
-
-// const divisionTD = document.querySelector('#division');
-// const divisionData = document.createElement('td');
-
-// const wildcardTD = document.querySelector('#wildcard');
-// const wildcardData = document.createElement('td');
-
-// }
 
 // function toggleTheme(event) {
 //     event.preventDefault();

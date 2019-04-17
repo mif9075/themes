@@ -18,7 +18,7 @@ const data = [
     {
         "team": "New York Mets",
         "worldseries": [1969, 1986],
-        "nlpennants": [1969, 1973, 1986, 2000, 2015],
+        "alpennants": [1969, 1973, 1986, 2000, 2015],
         "eastdivisiontitles": [1969, 1973, 1986, 1988, 2006, 2015],
         "wildcardberths": [1999, 2000, 2016],
         "nicknames": ["The Metropolitans", "The Amazin's", "The Metsies", "The Miracle Mets (1969)", "The Amazin Mets (1969)", "The Bad Guys (1986)"]
