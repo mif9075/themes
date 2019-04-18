@@ -113,28 +113,51 @@ function clearList() {
 
 
 function removeAllChildrenOfOl() {
-
-    const ul = document.querySelector('#worldseries');
-
-    while (ul.hasChildNodes()) {
-        ul.removeChild(ul.firstChild);
-    }
-
-    const ol = document.querySelector('#pennants');
+    const ol = document.querySelector('#worldseriesnum');
 
     while (ol.hasChildNodes()) {
         ol.removeChild(ol.firstChild);
     }
 
-    const ol2 = document.querySelector('#division');
+    const ol1 = document.querySelector('#worldseries');
+
+    while (ol1.hasChildNodes()) {
+        ol1.removeChild(ol1.firstChild);
+    }
+
+    const ol2 = document.querySelector('#pennants');
 
     while (ol2.hasChildNodes()) {
         ol2.removeChild(ol2.firstChild);
     }
 
-    const ol3 = document.querySelector('#wildcard');
+    const ol3 = document.querySelector('#pennantsnum');
 
     while (ol3.hasChildNodes()) {
         ol3.removeChild(ol3.firstChild);
+    }
+
+    const ol4 = document.querySelector('#division');
+
+    while (ol4.hasChildNodes()) {
+        ol4.removeChild(ol4.firstChild);
+    }
+
+    const ol5 = document.querySelector('#divisionnum');
+
+    while (ol5.hasChildNodes()) {
+        ol5.removeChild(ol5.firstChild);
+    }
+
+    const ol6 = document.querySelector('#wildcard');
+
+    while (ol6.hasChildNodes()) {
+        ol6.removeChild(ol6.firstChild);
+    }
+
+    const ol7 = document.querySelector('#wildcardnum');
+
+    while (ol7.hasChildNodes()) {
+        ol7.removeChild(ol7.firstChild);
     }
 }
