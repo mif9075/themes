@@ -65,20 +65,40 @@ function DisplayTable(team) {
 
     clearList();
 
+    const worldSeriesNumTD = document.querySelector('#worldseriesnum');
+    const worldSeriesNumData = document.createElement('p');
+    worldSeriesNumData.innerText = data[team].worldseries.length;
+    worldSeriesNumTD.appendChild(worldSeriesNumData);
+
     const worldSeriesTD = document.querySelector('#worldseries');
     const worldSeriesData = document.createElement('p');
     worldSeriesData.innerText = data[team].worldseries;
     worldSeriesTD.appendChild(worldSeriesData);
+
+    const pennantsNumTD = document.querySelector('#pennantsnum');
+    const pennantsNumData = document.createElement('p');
+    pennantsNumData.innerText = data[team].alpennants.length;
+    pennantsNumTD.appendChild(pennantsNumData);
 
     const pennantsTD = document.querySelector('#pennants');
     const pennantsData = document.createElement('p');
     pennantsData.innerText = data[team].alpennants;
     pennantsTD.appendChild(pennantsData);
 
+    const divisionNumTD = document.querySelector('#divisionnum');
+    const divisionNumData = document.createElement('p');
+    divisionNumData.innerText = data[team].eastdivisiontitles.length;
+    divisionNumTD.appendChild(divisionNumData);
+
     const divisionTD = document.querySelector('#division');
     const divisionData = document.createElement('p');
     divisionData.innerText = data[team].eastdivisiontitles;
     divisionTD.appendChild(divisionData);
+
+    const wildcardNumTD = document.querySelector('#wildcardnum');
+    const wildcardNumData = document.createElement('p');
+    wildcardNumData.innerText = data[team].wildcardberths.length;
+    wildcardNumTD.appendChild(wildcardNumData);
 
     const wildcardTD = document.querySelector('#wildcard');
     const wildcardData = document.createElement('p');
