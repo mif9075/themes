@@ -16,9 +16,11 @@ function toggleRedSox(event) {
     const app = document.querySelector('.table');
     const header = document.querySelector('.header');
 
-
     header.innerText = data[1].nicknames[Math.ceil(Math.random() * data[1].nicknames.length) - 1];
-    
+    header.classList.remove('mets');
+    header.classList.remove('yankees');
+    header.classList.add('redsox');
+
     app.classList.remove('mets');
     app.classList.remove('yankees');
     app.classList.add('redsox');
@@ -31,7 +33,9 @@ function toggleMets(event) {
     const header = document.querySelector('.header');
     
     header.innerText = data[2].nicknames[Math.ceil(Math.random() * data[2].nicknames.length) - 1];
-    
+    header.classList.remove('redsox');
+    header.classList.remove('yankees');
+    header.classList.add('mets');
 
     app.classList.remove('redsox');
     app.classList.remove('yankees');
@@ -45,7 +49,10 @@ function toggleYankees(event) {
     const header = document.querySelector('.header');
     
     header.innerText = data[0].nicknames[Math.ceil(Math.random() * data[0].nicknames.length) - 1];
-    
+    header.classList.remove('mets');
+    header.classList.remove('redsox');
+    header.classList.add('yankees');
+
     app.classList.remove('mets');
     app.classList.remove('redsox');
     app.classList.add('yankees');
